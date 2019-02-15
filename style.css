@@ -1,0 +1,189 @@
+/* line 1, sass/_flex.scss */
+.flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 8, sass/_flex.scss */
+.flex.row {
+  flex-direction: row;
+  -webkit-flex-flow: row wrap;
+}
+
+/* line 15, sass/_flex.scss */
+.flex.row {
+  justify-content: center;
+}
+/* line 19, sass/_flex.scss */
+.flex .item_1_1 {
+  width: 50%;
+  flex-basis: 50%;
+}
+/* line 23, sass/_flex.scss */
+.flex .item_1_3 {
+  width: calc(100%/3);
+  flex-basis: calc(100%/3);
+}
+/* line 27, sass/_flex.scss */
+.flex .item_2_3 {
+  width: calc((100%/3)*2);
+  flex-basis: calc((100%/3)*2);
+}
+/* line 31, sass/_flex.scss */
+.flex .item_5_7 {
+  width: calc((100%/7)*5);
+  flex-basis: calc((100%/7)*5);
+}
+/* line 35, sass/_flex.scss */
+.flex .item_2_7 {
+  width: calc((100%/7)*2);
+  flex-basis: calc((100%/7)*2);
+}
+/* line 39, sass/_flex.scss */
+.flex .item_1_2 {
+  width: 50%;
+  flex-basis: 50%;
+}
+/* line 43, sass/_flex.scss */
+.flex .item_2_5 {
+  width: 40%;
+  flex-basis: 40%;
+}
+/* line 47, sass/_flex.scss */
+.flex .item_3_5 {
+  width: 60%;
+  flex-basis: 60%;
+}
+/* line 51, sass/_flex.scss */
+.flex .item_1_5 {
+  width: 20%;
+  flex-basis: 20%;
+}
+/* line 55, sass/_flex.scss */
+.flex .item_4_5 {
+  width: 80%;
+  flex-basis: 80% !important;
+}
+/* line 59, sass/_flex.scss */
+.flex .item_1_4 {
+  width: 25%;
+  flex-basis: 25%;
+}
+/* line 63, sass/_flex.scss */
+.flex .item_3_4 {
+  width: 75%;
+  flex-basis: 75%;
+}
+/* line 67, sass/_flex.scss */
+.flex .item_3_4_2 {
+  width: calc(75%/2);
+  flex-basis: calc(75%/2);
+}
+/* line 71, sass/_flex.scss */
+.flex .item_272 {
+  width: 272px;
+  flex-basis: 272px;
+}
+/* line 75, sass/_flex.scss */
+.flex .item_calc-50_136 {
+  width: calc(50% - 136px);
+  flex-basis: calc(50% - 136px);
+}
+/* line 79, sass/_flex.scss */
+.flex .item_1_200 {
+  width: calc(100% - 200px);
+  flex-basis: calc(100% - 200px);
+}
+/* line 83, sass/_flex.scss */
+.flex .item_200_1 {
+  width: 200px;
+  flex-basis: 200px;
+}
+/* line 87, sass/_flex.scss */
+.flex.flexend {
+  justify-content: flex-end;
+}
+/* line 90, sass/_flex.scss */
+.flex.flexstart {
+  justify-content: flex-start;
+}
+/* line 93, sass/_flex.scss */
+.flex.col {
+  flex-direction: column;
+  -webkit-flex-flow: column wrap;
+}
+/* line 97, sass/_flex.scss */
+.flex.col.nowrap {
+  -webkit-flex-flow: column;
+}
+/* line 101, sass/_flex.scss */
+.flex.vs {
+  align-items: flex-start;
+}
+/* line 104, sass/_flex.scss */
+.flex.vc {
+  align-items: center;
+}
+/* line 107, sass/_flex.scss */
+.flex.vb {
+  align-items: flex-end;
+}
+/* line 110, sass/_flex.scss */
+.flex.hc {
+  justify-content: center;
+}
+/* line 113, sass/_flex.scss */
+.flex.space_around {
+  justify-content: space-around;
+}
+/* line 116, sass/_flex.scss */
+.flex.space_between {
+  justify-content: space-between;
+}
+/* line 119, sass/_flex.scss */
+.flex.space_evenly {
+  justify-content: space-evenly;
+}
+/* line 122, sass/_flex.scss */
+.flex.full {
+  width: 100%;
+  flex-basis: 100%;
+  justify-content: center;
+}
+/* line 127, sass/_flex.scss */
+.flex .item_13_25 {
+  width: 52%;
+  flex-basis: 52%;
+}
+/* line 131, sass/_flex.scss */
+.flex .item_12_25 {
+  width: 48%;
+  flex-basis: 48%;
+}
+@media (max-width: 50em) {
+  /* line 137, sass/_flex.scss */
+  .flex .item_1_2, .flex .item_12_25, .flex .item_1_3, .flex .item_13_25, .flex .item_3_5, .flex .item_2_5, .flex .item_5_7, .flex .item_2_7, .flex .item_1_5 {
+    width: 100% !important;
+    flex-basis: 100% !important;
+  }
+  /* line 141, sass/_flex.scss */
+  .flex .item_1_4 {
+    width: auto !important;
+    flex-basis: auto !important;
+  }
+  /* line 145, sass/_flex.scss */
+  .flex .item_1_200 {
+    width: 100% !important;
+    flex-basis: 100% !important;
+  }
+}
+@media (max-width: 37.5em) {
+  /* line 151, sass/_flex.scss */
+  .flex .item_1_4, .flex .item_2_3 {
+    width: 100% !important;
+    flex-basis: 100% !important;
+  }
+}

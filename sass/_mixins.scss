@@ -1,0 +1,57 @@
+// rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// general easing
+@mixin ease() {
+	transition:.3s all ease;
+
+	&:hover{
+		transition: .3s all ease;
+	}
+}
+
+// responsive breakpoints 
+@mixin breakpoint($point) {
+	@if $point == desktop {
+		@media (max-width: 70em) { @content ; }
+		// 1120px
+	}
+	@else if $point == laptop {
+		@media (max-width: 64em) { @content ; }
+		// 1024px
+	}
+	@else if $point == tablet {
+		@media (max-width: 50em) { @content ; }
+		// 800px
+	}
+	@else if $point == phablet {
+		@media (max-width: 37.5em)  { @content ; }
+		// 600px
+	}
+	@else if $point == mobile {
+		@media (max-width: 31.25em)  { @content ; }
+		// 600px
+	}
+}
